@@ -14,6 +14,8 @@ public class BinarySearch {
         System.out.println(resultNormal);
 
     }
+
+    //Não é necessario fazer isso pois ja existe uma função binarySearch na biblioteca java.util
     private static String binSearch(int[] arr, int target){
         int left = 0;
         int right = arr.length - 1;
