@@ -2,6 +2,8 @@ package algoritmos.mergeSort;
 
 import java.util.Arrays;
 
+import static algoritmos.uteis.Uteis.printArray;
+
 public class MergeSort {
     public static void main(String[] args){
         int[] num = {7,5,4,6,8,2,1,46,465,79,4,321,87,45,123,12,78,8562,22,2125,24,9,3};
@@ -47,20 +49,5 @@ public class MergeSort {
             result[k++] = right[r++];
         }
         return result;
-    }
-
-
-
-
-    //somente para imprimir a lista de maneira correta.
-    private static void printArray(int[] arr){
-        for(int i = 0; i< arr.length; i++){
-
-            if(i == arr.length-1){
-                System.out.printf("%d", arr[i]);
-            }else{
-                System.out.printf("%d, ", arr[i]);
-            }
-        }
     }
 }
